@@ -85,8 +85,6 @@ int verificarAresta(tgrafo *grafo, tvertice v,  tvertice u){
 
     /* percorrer o vetor até encontrar o vertice v*/
     aux = grafo->vet[i]
-
-    /*lista vazia*/
     
     while(aux != NULL){
     
@@ -108,7 +106,7 @@ void liberarGrafo(tgrafo *grafo){
     tapontador atual, prox;
 
     /*percorrer o vetor lista*/
-    for(i = 0; i<grafo->num_vertices;i++){
+    for(i = 0; i<grafo->num_vertices; i++){
 
         atual = grafo->vet[i];
            
