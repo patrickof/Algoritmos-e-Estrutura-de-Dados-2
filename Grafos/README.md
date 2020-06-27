@@ -10,7 +10,7 @@ Desenvolvimento de TAD de Grafos utilizando matriz e lista de adjacências.
 
  * ***void inserirAresta(tgrafo * grafo, tvertice v, tvertice u, tpeso peso):*** adiciona uma aresta de v para u com o seu peso
 
- * ***int verificarAresta(tgrafo grafo, tvertice v,  tvertice u):*** verifica se tem uma aresta do vertice v para o u e o retorna
+ * ***int verificarAresta(tgrafo * grafo, tvertice v,  tvertice u):*** verifica se tem uma aresta do vertice v para o u e o retorna
 
- * ***void liberarGrafo(tgrafo *grafo):*** libera toda memória alocada anteriormente
+ * ***void liberarGrafo(tgrafo * grafo):*** libera toda memória alocada anteriormente
 
