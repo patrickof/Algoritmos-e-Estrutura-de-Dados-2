@@ -191,3 +191,67 @@ void bfs_iterativo_aux(tvertice v, int cor[], tgrafo *grafo ){
 }
 
 
+void dfs_iterativo(tgrafo *grafo){
+
+    tvertice v;
+    int cor[grafo->num_vertices];
+
+    for(v = 0; v < grafo->num_vertices; v++)
+        cor[v] = BRANCO;
+    
+    for(v = 0; v < grafo->num_vertices; v++){
+        if(cor[v] == BRANCO)
+            dfs_iterativo_aux(v,cor,grafo);
+    }
+    
+}
+
+void dfs_iterativo_aux(tvertice v, int cor[], tgrafo *grafo ){
+
+    tapontador p;
+    tpeso peso;
+    tvertice w;
+    std::queue<tvertice> q;
+
+    cor[v] = CINZA;
+
+    q.push(v);
+
+    printf("%d ", v);
+
+    while(!q.empty()){
+
+        /* pop da "pilha" */
+        v = q.front();
+        q.pop();
+
+        p = primeiro_adj(v,grafo);
+
+        while(p != NULO){
+            recuperar_adj(v,p,&w,&peso, grafo);
+            
+            if(cor[w] == BRANCO){
+                cor[w] = CINZA;
+                q.push(w);
+                printf("%d ", w);
+                v = w;
+
+            }
+
+            p = proximo_adj(v,p,grafo);
+
+        }
+
+        cor[v] = PRETO;
+
+
+    }
+
+
+
+
+}
+
+
+
+

@@ -45,6 +45,10 @@ void dfs_recursivo(tgrafo *grafo);
 
 void dfs_recursivo_aux(tvertice v, int cor[], tgrafo *grafo);
 
+void dfs_iterativo(tgrafo *grafo);
+
+void dfs_iterativo_aux(tvertice v, int cor[], tgrafo *grafo );
+
 void bfs_iterativo(tgrafo *grafo);
 
 void bfs_iterativo_aux(tvertice v, int cor[], tgrafo *grafo );
