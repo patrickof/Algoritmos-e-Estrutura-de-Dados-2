@@ -1,3 +1,5 @@
+/* Desenvolvido por Patrick Feitosa*/
+/* Numero USP: 10276682 */
 #include <stdio.h>
 #include <stdlib.h>
 #include "grafo.h"
