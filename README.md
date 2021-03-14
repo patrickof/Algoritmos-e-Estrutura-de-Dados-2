@@ -18,5 +18,5 @@ Implementação de um arquivo de registros de campo e tamanho fixo, um arquivo d
 ## Trabalho 1
 Implementacao de um arquivo de registros de campo e tamanho fixo e um arquivo de indices primarios organizado em uma Árvore B.
 
-## Trabalho 1
+## Trabalho 2
 Implementação de um Grafo, o qual servirá para auxiliar na investigação do mundo de Kevin Bacon.
